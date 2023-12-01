@@ -1,7 +1,7 @@
 name: Testing when someone push
 on:
   push:
-    branches: ['khoe']
+    branches: ['main']
 jobs:
   build:
     runs-on: self-hosted
