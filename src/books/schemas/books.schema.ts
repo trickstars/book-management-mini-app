@@ -1,4 +1,7 @@
 import { Schema, Prop, SchemaFactory } from "@nestjs/mongoose";
+import { HydratedDocument } from "mongoose";
+
+export type BookDocument = HydratedDocument<Book>;
 
 @Schema()
 export class Book {
@@ -11,7 +14,7 @@ export class Book {
     @Prop({required: true})
     publisher: string;
 
-    @Prop({required: true, default: Date.now()})
+    @Prop({ default: Date.now()})
     publish_date: Date;
 }
 
