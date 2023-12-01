@@ -16,7 +16,7 @@ describe('BooksService', () => {
         BooksService,
         {
           provide: getModelToken(Book.name),
-          useValue: createMock<Model<Book>>()
+          // useValue: createMock<Model<Book>>()
         }
       ],
     }).compile();
