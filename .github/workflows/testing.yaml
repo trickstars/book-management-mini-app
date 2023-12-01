@@ -1,5 +1,7 @@
 name: Testing when someone push
-on: pull_request
+on:
+  push:
+    branches: ['khoe']
 jobs:
   build:
     runs-on: self-hosted
